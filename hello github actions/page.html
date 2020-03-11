@@ -1,0 +1,86 @@
+<!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Hello Github Actions</title>
+</head><body>- What are GitHub Actions?<ul><li style="list-style-type: none"/>
+</ul>
+<ul>- GitHub Actions are a flexible way to automate nearly every aspect of your team's software workflow.</ul>
+<br/>
+<br/>
+- There are two components to using GitHub Actions :<ul><li>- the <b>action</b> itself</li>
+<li>- a <b>workflow</b> that uses action(s)</li>
+<li/>
+</ul>
+- What is Workflow?<ul>- </ul>
+A workflow can contain many actions. Each action has its own purpose. We'll put the files relating to the action in their own directories.<br/>
+<br/>
+- Actions are of 2 types :<ul><li>- <b>container</b>actions </li>
+</ul>
+<ul>- <b>JavaScript </b>action</ul>
+s<br/>
+<br/>
+- Docker <b>container actions</b> allow the environment to be packaged with the GitHub Actions code and can only execute in the GitHub-Hosted Linux environment.<br/>
+<br/>
+- <b>JavaScript actions</b> decouple the GitHub Actions code from the environment allowing faster execution but accepting greater dependency management responsibility.<br/>
+<br/>
+- Initially add a Docker file <br/>
+<img src="image.png"/><br/>
+<br/>
+- The entrypoint.sh script will be run in Docker, and it will define what the action is really going to be doing.<br/>
+- add entrypoint.sh as <br/>
+<img src="image 2.png"/><br/>
+<br/>
+- Next, we'll define a <b>workflow</b> that uses the GitHub Action.<br/>
+- Next, we'll define the action.yml file which contains the metadata for our action.<br/>
+- this action.yml contains icon , im=nput and running images<br/>
+<img src="image 3.png"/><br/>
+<br/>
+- After this we have to define a workflow to initiate our action in .github/workfows/main.yml and add the following lines<br/>
+<img src="image 4.png"/><br/>
+<br/>
+<img src="image 5.png"/><br/>
+<br/>
+- Workflows piece together jobs, and jobs piece together steps.<ul><li>We'll now create a job that runs an action.</li>
+<li/>
+</ul>
+- Actions can be used from within the same repository, from any other public repository, or from a published Docker container image. We'll use an action that we'll define in this repository.<br/>
+<br/>
+- Now we edit the main.yml file and add a job to it<br/>
+<img src="image 6.png"/><br/>
+<br/>
+<img src="image 7.png"/><br/>
+- Congratulations, Its done.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</body></html>
